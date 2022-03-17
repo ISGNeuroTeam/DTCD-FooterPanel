@@ -60,6 +60,7 @@ Also you can see the [CHANGELOG](CHANGELOG.md) file.
 ## Authors
 
 - Roman Kuramshin (rkuramshin@isgneuro.com)
+- Sergey Belikov (sbelikov@isgneuro.com)
 
 ## License
 
