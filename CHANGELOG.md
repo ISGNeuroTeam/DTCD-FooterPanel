@@ -10,3 +10,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - inited panel
+
+### Changed
+
+- html layout
+- styles
+
+### Removed 
+
+- insertion of css-variables

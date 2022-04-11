@@ -1,13 +1,13 @@
 <template>
-  <div class="Footer">
-    <div class="MenuList">
-      <span class="Copyright">© DataCAD 2022</span>
-      <span>Политика конфиденциальности</span>
-      <span>Лицензии</span>
-      <span>Партнерам</span>
-    </div>
+  <footer class="Footer">
+    <nav class="MenuList">
+      <a href="#" class="MenuItem Copyright">© DataCAD 2022</a>
+      <a href="#" class="MenuItem">Политика конфиденциальности</a>
+      <a href="#" class="MenuItem">Лицензии</a>
+      <a href="#" class="MenuItem">Партнерам</a>
+    </nav>
     <div class="Version">V 0.4.0</div>
-  </div>
+  </footer>
 </template>
 
 <script>
@@ -24,7 +24,6 @@ export default {
   min-height: 30px
   padding: 0 20px
   background-color: var(--background_main)
-  color: var(--header_background)
   font-size: 15px
   font-family: 'Proxima Nova'
 
@@ -39,6 +38,13 @@ export default {
     align-self: stretch
     align-items: center
     column-gap: 80px
+
+    & > * 
+      text-align: center
+
+    .MenuItem
+      text-decoration: none
+      color: var(--header_background)
 
     @media (max-width: 992px) 
       gap: 32px
