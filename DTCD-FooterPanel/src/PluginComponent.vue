@@ -1,7 +1,7 @@
 <template>
   <footer class="Footer">
     <nav class="MenuList">
-      <a href="#" class="MenuItem_copyright">© DataCAD 2022</a>
+      <a href="#" class="MenuItem with_copyright">© DataCAD 2022</a>
       <a href="#" class="MenuItem">Политика конфиденциальности</a>
       <a href="#" class="MenuItem">Лицензии</a>
       <a href="#" class="MenuItem">Партнерам</a>
@@ -39,14 +39,13 @@ export default {
     align-items: center
     column-gap: 80px 
 
-    .MenuItem,.MenuItem_copyright
+    .MenuItem
       text-decoration: none
       color: var(--header_background)
       text-align: center
 
-      &_copyright
-        font-weight: 600
-        
+      &.with_copyright
+        font-weight: 600   
 
     @media (max-width: 992px) 
       gap: 32px
