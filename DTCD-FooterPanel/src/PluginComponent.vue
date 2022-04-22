@@ -23,7 +23,8 @@ export default {
   justify-content: space-between
   min-height: 30px
   padding: 0 20px
-  background-color: var(--background_main)
+  background: rgba(254, 254, 254, 0.7)
+  backdrop-filter: blur(40px)
   font-size: 15px
   font-family: 'Proxima Nova'
 
