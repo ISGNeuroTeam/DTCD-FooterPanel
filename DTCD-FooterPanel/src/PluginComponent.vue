@@ -27,6 +27,7 @@ export default {
   backdrop-filter: blur(40px)
   font-size: 15px
   font-family: 'Proxima Nova'
+  color: var(--text_main)
 
   @media (max-width: 768px) 
     flex-direction: column
