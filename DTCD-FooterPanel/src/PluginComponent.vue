@@ -24,8 +24,10 @@ export default {
   min-height: 30px
   padding: 0 20px
   background-color: var(--background_main)
+  backdrop-filter: blur(40px)
   font-size: 15px
   font-family: 'Proxima Nova'
+  color: var(--text_main)
 
   @media (max-width: 768px) 
     flex-direction: column
@@ -41,7 +43,7 @@ export default {
 
     .MenuItem
       text-decoration: none
-      color: var(--header_background)
+      color: var(--text_main)
       text-align: center
 
       &.with_copyright
@@ -56,5 +58,5 @@ export default {
   .Version
     @media (max-width: 768px) 
       padding-top: 74px
-
+      color: var(--text_main)
 </style>
