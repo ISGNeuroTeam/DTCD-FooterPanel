@@ -1,9 +1,9 @@
 import pluginMeta from './Plugin.Meta';
 import PluginComponent from './PluginComponent.vue';
 
-import { PanelPlugin, StyleSystemAdapter } from './../../DTCD-SDK/index';
+import { AppPanelPlugin, StyleSystemAdapter } from './../../DTCD-SDK/index';
 
-export class FooterPanel extends PanelPlugin {
+export class FooterPanel extends AppPanelPlugin {
   static getRegistrationMeta() {
     return pluginMeta;
   }

@@ -3,7 +3,7 @@ import { version } from '../package.json';
 export default {
   type: 'panel',
   name: 'FooterPanel',
-  title: 'Шапка',
+  title: 'Футер',
   version,
   withDependencies: true,
 };
