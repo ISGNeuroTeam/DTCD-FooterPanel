@@ -11,8 +11,6 @@ export class FooterPanel extends AppPanelPlugin {
   constructor(guid, selector) {
     super();
 
-    const styleSystem = new StyleSystemAdapter('0.4.0');
-
     const VueJS = this.getDependence('Vue');
 
     const data = { guid };
