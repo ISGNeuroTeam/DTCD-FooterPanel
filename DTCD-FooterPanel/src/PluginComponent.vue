@@ -1,18 +1,27 @@
 <template>
   <footer class="Footer">
     <nav class="MenuList">
-      <a href="#" class="MenuItem with_copyright">© DataCAD 2022</a>
-      <a href="#" class="MenuItem">Политика конфиденциальности</a>
-      <a href="#" class="MenuItem">Лицензии</a>
-      <a href="#" class="MenuItem">Партнерам</a>
+      <a class="MenuItem with_copyright">© DataCAD {{ curYear }}</a>
+      <a class="MenuItem">Политика конфиденциальности</a>
+      <a class="MenuItem">Лицензии</a>
+      <a class="MenuItem">Партнерам</a>
     </nav>
-    <div class="Version">V 0.4.0</div>
+    <div class="Version" v-text="`V ${version}`"/>
   </footer>
 </template>
 
 <script>
 export default {
   name: 'PluginComponent',
+  computed: {
+    version() {
+      return Application.version;
+    },
+
+    curYear() {
+      return new Date().getFullYear();
+    },
+  },
 };
 </script>
 
@@ -29,7 +38,7 @@ export default {
   font-family: 'Proxima Nova'
   color: var(--text_main)
 
-  @media (max-width: 768px) 
+  @media (max-width: 768px)
     flex-direction: column
     justify-content: center
     padding: 20px 0
@@ -39,7 +48,7 @@ export default {
     display: flex
     align-self: stretch
     align-items: center
-    column-gap: 80px 
+    column-gap: 80px
 
     .MenuItem
       text-decoration: none
@@ -47,16 +56,16 @@ export default {
       text-align: center
 
       &.with_copyright
-        font-weight: 600   
+        font-weight: 600
 
-    @media (max-width: 992px) 
+    @media (max-width: 992px)
       gap: 32px
 
-    @media (max-width: 768px) 
-      flex-direction: column 
+    @media (max-width: 768px)
+      flex-direction: column
 
   .Version
-    @media (max-width: 768px) 
+    @media (max-width: 768px)
       padding-top: 74px
       color: var(--text_main)
 </style>
