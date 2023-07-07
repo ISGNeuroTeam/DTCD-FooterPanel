@@ -2,11 +2,8 @@
   <footer class="Footer">
     <nav class="MenuList">
       <a class="MenuItem with_copyright">© DataCAD {{ curYear }}</a>
-      <a class="MenuItem">Политика конфиденциальности</a>
-      <a class="MenuItem">Лицензии</a>
-      <a class="MenuItem">Партнерам</a>
     </nav>
-    <div class="Version" v-text="`V ${version}`"/>
+    <div class="Version" v-text="`V ${version}`" />
   </footer>
 </template>
 
